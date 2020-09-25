@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Movies</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+      <div id="container">
+         <div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Movie Filter</h1>
+				<p class="lead">Request a list of movies to pick from.Fill out our form below</p>
+			</div>
+		</div>
+        
+        <form action="MovieServlet" method="get">
+            
+           <h2>Rating</h2><br>
+                <input type="checkbox" id="G" name="G" value="G">
+                <label for="G">G</label><br>
+                <input type="checkbox" id="PG" name="PG" value="PG">
+                <label for="PG">PG</label><br>
+                <input type="checkbox" id="PG13" name="PG-13" value="PG-13">
+                <label for="PG-13">PG-13</label><br>
+                <input type="checkbox" id="NC17" name="NC-17" value="NC-17">
+                <label for="NC-17">NC-17</label><br>
+                <input type="checkbox" id="R" name="R" value="R">
+                <label for="R">R</label><br><br>
+              
+                <h2>Rental Rate</h2><br>
+                <input type="radio" id="0.99" name="rental" value="0.99">
+                <label for="0.99">$0.99</label><br>
+                <input type="radio" id="2.99" name="rental" value="2.99">
+                <label for="2.99">$2.99</label><br>
+                <input type="radio" id="4.99" name="rental" value="4.99">
+                <label for="4.99">$4.99</label><br><br>
+                <label for="result">Result Size:</label><br>
+                <input type="number" id="result" name="result" min="1" max="20" required ><br><br>
+           
+            <input type="submit" value="Search" class="btn btn-primary">&nbsp;&nbsp;
+            <input type="reset" value="Clear" class="btn btn-secondary"><br>
+             
+            
+        </form>
+    </div>
+
+
+</body>
+</html>
